@@ -1,4 +1,4 @@
-public class PraticaAluraV_ContaBancaria {
+class ContaBancaria {
     private int numeroConta;
     private double saldo;
     public String titular;
@@ -19,9 +19,9 @@ public class PraticaAluraV_ContaBancaria {
         this.saldo = saldo;
     }
 }
-class Principal {
+public class PraticaAluraV_ContaBancaria {
     public static void main(String[] args) {
-        PraticaAluraV_ContaBancaria conta = new PraticaAluraV_ContaBancaria();
+        ContaBancaria conta = new ContaBancaria();
         
         conta.setNumeroConta(123);
         conta.setSaldo(1000);

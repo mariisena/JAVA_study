@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class PraticaAluraIV_Calculadora {
     public static void main(String[] args) {
-        Scanner receberNum = new Scanner(System.in);
+        @SuppressWarnings("resource")
+        Scanner receberNumeroScanner = new Scanner(System.in);
         System.out.println("Digite um número: ");
-        double numero = receberNum.nextDouble();
+        double numero = receberNumeroScanner.nextDouble();
         System.out.printf("Dobro do número recebido: %.2f", numero * numero);
     }
 }

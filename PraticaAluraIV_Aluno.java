@@ -14,20 +14,23 @@ public class PraticaAluraIV_Aluno {
         System.out.println();
     }
 
+    @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
-        Scanner dadoScanner = new Scanner(System.in);
+        Scanner leitura = new Scanner(System.in);
 
         PraticaAluraIV_Aluno meuAluno = new PraticaAluraIV_Aluno();
 
         System.out.println("Digite o nome do aluno: ");
-        meuAluno.nomeAluno = dadoScanner.nextLine();
+        meuAluno.nomeAluno = leitura.nextLine();
 
         System.out.println("Digite a idade do aluno: ");
-        meuAluno.idadeAluno = dadoScanner.nextInt();
+        meuAluno.idadeAluno = leitura.nextInt();
 
         meuAluno.exibirInformacoes();
 
+        leitura.close();
     }
+
 }
 
 /* GABARITO
